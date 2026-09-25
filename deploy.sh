@@ -1,6 +1,6 @@
 #!/bin/bash
 #Variables
-ACR_NAME="acrgenerala2v2"
+ACR_NAME="acrgeneralea2v2"
 IMAGE_NAME="avatar-bancoomeva"
 ACR_LOGIN_SERVER="$ACR_NAME.azurecr.io"
 VERSION="1.0"
