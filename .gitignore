@@ -6,6 +6,11 @@
 *.env
 !.env.example
 !.env.template
+
+# Los env del frontend solo llevan la URL del backend, no credenciales,
+# y el build de la imagen depende de .env.production: van versionados.
+!frontend/.env.development
+!frontend/.env.production
 *.pem
 *.key
 *.pfx

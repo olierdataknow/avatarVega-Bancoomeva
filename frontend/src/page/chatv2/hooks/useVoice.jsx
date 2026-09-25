@@ -177,8 +177,12 @@ export function useVoiceAssistant({ setMsg }) {
 
     setStatus("Conectando");
 
+    // La URL sale de .env.development (local) o .env.production (imagen
+    // Docker). Sin ella se asume el mismo origen que sirve la página.
     const proto = location.protocol === "https:" ? "wss:" : "ws:";
-    const ws = new WebSocket(`${proto}//localhost:8000/realtime`);
+    const url =
+      import.meta.env.VITE_REALTIME_URL || `${proto}//${location.host}/realtime`;
+    const ws = new WebSocket(url);
     wsRef.current = ws;
 
     ws.onmessage = handleServerMessage;
