@@ -12,11 +12,10 @@
 local.settings.json
 
 # ---------------------------------------------------------------------------
-# Configuracion con credenciales (usar frontend/config.example.json como base)
+# Configuracion con credenciales (el avatar actual usa variables de entorno)
 # ---------------------------------------------------------------------------
 config.json
 frontend/config.json
-!frontend/config.example.json
 
 # Notebooks de trabajo (suelen tener claves pegadas)
 app/temp.ipynb
