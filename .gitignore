@@ -1,0 +1,143 @@
+# ---------------------------------------------------------------------------
+# Secretos y variables de entorno
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+!.env.template
+*.pem
+*.key
+*.pfx
+local.settings.json
+
+# ---------------------------------------------------------------------------
+# Configuracion con credenciales (usar frontend/config.example.json como base)
+# ---------------------------------------------------------------------------
+config.json
+frontend/config.json
+!frontend/config.example.json
+
+# Notebooks de trabajo (suelen tener claves pegadas)
+app/temp.ipynb
+
+# ---------------------------------------------------------------------------
+# Python / backend (app/)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+MANIFEST
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing / calidad / tipado
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---------------------------------------------------------------------------
+# Node / frontend (Vite + React)
+# ---------------------------------------------------------------------------
+node_modules/
+.pnp
+.pnp.js
+dist/
+dist-ssr/
+*.local
+.vite/
+.cache/
+.eslintcache
+.npm
+.yarn/cache
+.yarn/install-state.gz
+.pnpm-store/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------------------------------------------------------------------------
+# Docker
+# ---------------------------------------------------------------------------
+docker-compose.override.yml
+.dockerignore.local
+
+# ---------------------------------------------------------------------------
+# Editores e IDEs
+# ---------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+.idea/
+*.swp
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.code-workspace
+
+# ---------------------------------------------------------------------------
+# Sistema operativo / OneDrive
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+*.tmp
+*.temp
+*.bak
+*.orig
+*- Copia.*
+*- Copy.*
+
+# ---------------------------------------------------------------------------
+# Archivos generados / temporales del proyecto
+# ---------------------------------------------------------------------------
+tmp/
+temp/
+*.sqlite
+*.sqlite3
+*.db

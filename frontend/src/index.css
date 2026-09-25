@@ -1,0 +1,40 @@
+.animated-border-button {
+  font-weight: 100;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 8px; /* Agregamos border-radius */
+}
+
+.animated-border-button svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.animated-border-button rect {
+  fill: none;
+  stroke: #747474;
+  stroke-width: 4;
+  stroke-dasharray: 200, 400;
+  stroke-dashoffset: 0;
+  rx: 8; /* Aplica el border-radius al rectángulo */
+  ry: 8;
+  animation: border-rotate 3s linear infinite;
+}
+
+/* Animación para mover la línea alrededor del borde */
+@keyframes border-rotate {
+  0% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

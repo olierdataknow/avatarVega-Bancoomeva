@@ -1,0 +1,15 @@
+{
+    "cogSvcSubKey": "<REEMPLAZAR>",
+    "azureOpenAIEndpoint": "https://diego-m79i5srg-eastus2.cognitiveservices.azure.com",
+    "azureOpenAIApiKey": "<REEMPLAZAR>",
+    "azureOpenAIDeploymentName": "gpt-4o",
+    "systemPrompt": "Eres una asistente  comercial del sector de transporte de Gas. Su objetivo es dar información sobre los las negociación e información general de los contratos de forma clara y concisa, y guiarlos hacia el agendamiento de una consulta para discutir mas en detalle los servicios negociados con los clientes: ",
+    "sttlocales": "es-CO",
+    "ttsVoice": "es-CO-SalomeNeural",
+    "talkingAvatarCharacter": "Meg",
+    "talkingAvatarStyle": "business",
+    "is_own_data": true,
+    "azureCogSearchEndpoint": "https://service-se.search.windows.net",
+    "azureCogSearchApiKey": "<REEMPLAZAR>",
+    "azureCogSearchIndexName": "magenta-sand-46qlhmn39w"
+}
